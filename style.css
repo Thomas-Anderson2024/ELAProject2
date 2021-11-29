@@ -16,17 +16,23 @@ body,
 :root {
   --green: #60993e;
   --dark-green: #35501d;
+  --green-three: #2c6e49;
   --blue: #2d82b7;
   --dark-blue: #1d157a;
+  --blue-three: #264653;
 }
 html {
   max-width: 100%;
   max-height: 100%;
 }
+
 h1 {
   width: 100%;
   font-size: 10rem;
   justify-content: center;
+  background-color: var(--tert);
+  color: var(--primary);
+  text-shadow: 2px 5px #411749;
 }
 h2 {
   box-sizing: content-box;
@@ -40,6 +46,9 @@ h2 {
   background-color: var(--primary);
   border-radius: 5rem;
   font-size: 1rem;
+}
+body {
+  background-color: var(--tert);
 }
 button {
   box-sizing: content-box;
@@ -56,8 +65,16 @@ button {
 .old {
   --primary: var(--blue);
   --secondary: var(--dark-blue);
+  --tert: var(--blue-three);
 }
 .new {
   --primary: var(--green);
   --secondary: var(--dark-green);
+  --tert: var(--green-three);
+}
+img {
+  margin-bottom: 5%;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 2.5%;
 }
